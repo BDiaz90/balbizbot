@@ -24,7 +24,6 @@ st.markdown(
 
 
 # --- Header ---
-st.markdown("<h1 style='text-align: center;'>🤖 BalBizBot</h1>", unsafe_allow_html=True)
 st.markdown(
     """
     <h1 style='text-align: center; font-family: sans-serif;'>
@@ -36,7 +35,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 st.markdown("---")
 
 # --- Input Section ---
