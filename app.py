@@ -27,7 +27,7 @@ st.markdown(
 st.markdown(
     """
     <h1 style='text-align: center; font-family: sans-serif;'>
-        Bal<span style="color:#007BFF;">Biz</span>Bot
+        🤖Bal<span style="color:#007BFF;">Biz</span>Bot
     </h1>
     <p style='text-align: center; color: gray; font-size: 16px;'>
         Craft professional, thoughtful replies to customer reviews in seconds.
