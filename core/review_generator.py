@@ -12,7 +12,7 @@ def generate_response(review_text: str, tone: str, business_name: str = "") -> s
     Write a friendly, empathetic, and professional response:"""
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo", #4.5 is avaiable but may cost, use older version for MVp
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
