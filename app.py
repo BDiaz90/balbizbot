@@ -73,14 +73,30 @@ if st.button("🚀 Generate Response"):
                 st.error("Something went wrong. Please try again.")
 
 # Hide Streamlit footer and menu
+# Hide Streamlit footer, GitHub badge, and menu
 st.markdown(
     """
     <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden !important;}
-    .viewerBadge_link__1S137 {display: none !important;}
+    /* Hide GitHub corner link */
+    .viewerBadge_link__1S137, .viewerBadge_container__1QSob {
+        display: none !important;
+    }
+
+    /* Hide footer */
+    footer {
+        visibility: hidden;
+    }
+
+    /* Hide top-right hamburger menu */
+    #MainMenu {
+        visibility: hidden;
+    }
+
+    /* Remove top padding on mobile */
+    .block-container {
+        padding-top: 1rem;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
-
