@@ -71,3 +71,13 @@ if st.button("🚀 Generate Response"):
                 )
             else:
                 st.error("Something went wrong. Please try again.")
+
+# Hide Streamlit footer and GitHub repo link
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
