@@ -25,7 +25,18 @@ st.markdown(
 
 # --- Header ---
 st.markdown("<h1 style='text-align: center;'>🤖 BalBizBot</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Craft professional, thoughtful replies to customer reviews in seconds.</p>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <h1 style='text-align: center; font-family: sans-serif;'>
+        Bal<span style="color:#007BFF;">Biz</span>Bot
+    </h1>
+    <p style='text-align: center; color: gray; font-size: 16px;'>
+        Craft professional, thoughtful replies to customer reviews in seconds.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("---")
 
 # --- Input Section ---
