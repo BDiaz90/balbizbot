@@ -20,9 +20,5 @@ if st.button("Generate Response"):
         st.warning("Please enter a customer review.")
     else:
         with st.spinner("Generating..."):
-            try:
-                reply = generate_response(review_text, tone, business_name)
-                st.success("Response generated!")
-                st.text_area("AI-Generated Response", reply, height=150)
-            except Exception as e:
-                st.error(f"Error: {e}")
+            reply = generate_response(review_text, tone, business_name)
+            st.text_area("AI-Generated Response", reply, height=150)
