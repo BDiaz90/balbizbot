@@ -1,6 +1,5 @@
 from openai import OpenAI
 import os
-from openai.types import APIError
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
